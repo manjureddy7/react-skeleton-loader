@@ -1,0 +1,27 @@
+# Skeleton Loader
+
+Skeleton loader also known by names skeleton screens, ghost elements,content palceholders, content loaders.
+A skeleton UI resembles the actual UI of the page, so users will understand how quickly the web or mobile application will load even before the content is displayed.
+
+### Implementation behavior
+
+First things first we have used React + Typescript with Vite as build tool. Reasons : Vite is pretty much fast, zero configurations and you know the benefits of typescript
+even though this project is small i thought of using typescript to define props for components & shapes for data objects.
+
+Coming to the core point, the implementation
+
+We are exposing 2 components to acheive our desired behavior.
+
+i. Skeleton component: which takes in type of prop 'circle' | 'placeholder' | 'thumbnail' | 'text-lg' | 'text-md' | 'text-sm' to give appropriate shape and style prop to modify the existing styles
+
+ii. SkeletonPlaceholder: A Placeholder component where users can use to show the desired shape against their data. This component expects below props:
+
+    a.ready (booleab) :  Shows actual data component when ready is true else shows skeleton placeholder component when false.
+    b.customPlaceholder : Your custom shape React component to show skeleton when ready is false
+    c. children: Your actual data/desired component once the data is ready.
+
+This provides a simple and easy API to the end users when dealing with skeleton loaders. A placeholder component where you can define the shape you want with
+Skeleton component and a data/feature component which you want.
+
+
+
