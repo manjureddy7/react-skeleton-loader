@@ -1,0 +1,31 @@
+.pane {
+    display: flex;
+    gap: 10px;
+}
+
+.profile-container {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.profile {
+    display: flex;
+}
+.sub-texts {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.right-pane {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.connections {
+    display: flex;
+    width: 50%;
+}
